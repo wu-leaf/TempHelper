@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <!-- 接收数据框 -->
+    <TextView
+        android:id="@+id/in"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="@android:color/transparent"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentLeft="true"
+        android:textColor="#000"
+        android:textSize="30sp"
+    
+    />
+    <TextView
+        android:id="@+id/out"       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_toRightOf="@+id/in"
+        android:textColor="#000"
+        android:textSize="30sp"
+                                  />
+    
+        <Button android:id="@+id/Disconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disconnect"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+        />
+ 
+
+        <Button
+            android:id="@+id/Connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/Disconnect"
+            android:text="@string/connection" />
+        
+        <Button
+            android:id="@+id/Send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/Connect"
+            android:text="@string/Send" />
+        <Button
+            android:id="@+id/Stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/Send"
+            android:text="@string/Stop" />
+</RelativeLayout>

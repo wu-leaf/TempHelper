@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/show_temp_layout"
+    android:background="@drawable/bg_main"
+    >
+
+      <TextView
+		android:id="@+id/Big_Temp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="70dp"
+		android:textColor="#E61A5f"
+		android:textStyle="italic"/>
+    
+    <TextView
+       android:id="@+id/Hint"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:textColor="#faf"
+		android:textStyle="bold"
+		android:text="Hint:" 
+        />
+     <TextView
+		android:id="@+id/remark"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingLeft="30dp"
+		android:textSize="20dp"
+		android:layout_gravity="left"
+		android:textStyle="normal"/>
+   
+    <!-- 显示最新数据 --> 
+         <ListView
+		android:id="@+id/Temp_lv"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:choiceMode="singleChoice"
+		
+		>
+	     </ListView>
+</LinearLayout>
