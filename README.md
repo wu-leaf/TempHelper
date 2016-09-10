@@ -1,0 +1,1 @@
+This project is designed for a hardware device.The hardware mainly through infrared sensors to detect the human body temperature, to send the temperature to mobile phone to save again
